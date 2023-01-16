@@ -1,8 +1,13 @@
 # runter
 
 A concise way of making applications using a Flutter Like approach.
+When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). This library is an attempt to bring the component library and the framework to React Native.
 
-The best of both worlds, React Native and Flutter.
+## Why?
+
+Still tring to figure that out. But I think it's because I love Flutter and I love React Native and I would want the best of both worlds.
+
+⚠️ Experimental WIP ⚠️
 
 ## Installation
 
@@ -10,7 +15,7 @@ The best of both worlds, React Native and Flutter.
 npm install runter
 ```
 
- or
+or
 
 ```sh
 yarn add runter
@@ -18,9 +23,9 @@ yarn add runter
 
 ## Usage
 
-To get started, import the `Root` component from the `runter` package. This component is the root of your application and should be rendered at the top of your component tree.
+To get started, import the `Root` component from the `runter` package. This component is the root of your application and should be rendered at the top of your component tree. It is the equivalent of `runApp` in [Flutter](https://api.flutter.dev/flutter/widgets/runApp.html).
 
-Root takes a component child `MaterialApp` which is the main component of the library.
+Root takes a component child `MaterialApp` which is the main component of the library. It is the equivalent of `MaterialApp` in [Flutter](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
 MaterialApp takes a `home` prop which is the main component of your application.
 
@@ -33,7 +38,7 @@ The theme object also takes a `title` prop which is the title of your applicatio
 ```js
 // in App.js
 import React from 'react';
-import { Root, MaterialApp } from 'runter' // <-- This is the library
+import { Root, MaterialApp } from 'runter'; // <-- This is the library
 
 export default function App() {
   return (
@@ -45,7 +50,7 @@ export default function App() {
             primary: '#2196F3',
             background: '#fff',
           },
-          title: 'Runter Example'
+          title: 'Runter Example',
         }}
         title="Runter Example"
       />
@@ -53,13 +58,38 @@ export default function App() {
   );
 }
 
-
 // ...
-
 ```
+
+## Components
+
+I am working to bring all the components from Flutter to React Native. Starting with the basic ones. Here is a list of the components that are in the frontline of development.
+
+- [] Scaffold
+- [] AppBar
+- [] Text
+- [] Container
+- [] Row
+- [] Column
+- [] Center
+- [] Stack
+- [] Positioned
+- [] Image
+- [] Icon
+- [] IconButton
+- [] FloatingActionButton
+
+## Roadmap
+
+The current focus is building the basic 2 components (Root and MaterialApp) and making sure they work as expected. After that, I will be working on the components listed above.
+
+The next thing will probably be routing and navigation. I am still trying to figure out how to do that.
+
+I will also be working on the documentation and the examples.
 
 ## Contributing
 
+This idea is insane and still in its infancy and is no where ready for production. If you would like to contribute, please do so.
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
@@ -68,4 +98,4 @@ MIT
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+Made with ❤️ by [Daniel Dennis](https://github.com/katungi)
