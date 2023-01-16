@@ -29,6 +29,7 @@ MaterialApp also takes a `theme` prop which is an object that contains the theme
 The theme object takes a `colorScheme` prop which is an object that contains the colors of your application.
 
 The theme object also takes a `title` prop which is the title of your application.
+
 ```js
 // in App.js
 import React from 'react';
