@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { styled } from '@stitches/react';
 
@@ -9,12 +8,10 @@ import { styled } from '@stitches/react';
  *  For starters, we can just render a div with a white background and center the children in the middle of the screen.
  * This should be wrapped in the root component of the RN application. This is so that we can have control over stuff like routing and navigation and theming -
    and other stuff that we might want to do in the future.
-
  */
 
 export default function Root({ children }: { children: React.ReactNode }) {
-
-  const Root = styled('div', {
+  const RootWidget = styled('div', {
     width: '100%',
     height: '100%',
     backgroundColor: 'white',
@@ -23,7 +20,6 @@ export default function Root({ children }: { children: React.ReactNode }) {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-  })
-
-  return <Root>{children}</Root>;
+  });
+  return <RootWidget>{children}</RootWidget>;
 }
