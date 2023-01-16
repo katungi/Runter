@@ -1,3 +1,5 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+import Root from "./root";
+import { MaterialApp } from "components";
+
+// export root component
+export { Root, MaterialApp };

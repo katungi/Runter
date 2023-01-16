@@ -1,9 +1,8 @@
 import type { ThemeData } from './ThemeData';
 
 interface MaterialAppProps {
-  // home takes a react component
-  home: React.ComponentType;
-  theme: ThemeData;
+  home: React.ReactElement;
+  theme?: ThemeData;
   title: string;
 }
 

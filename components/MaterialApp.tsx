@@ -40,7 +40,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
   const Body = styled('div', {
     width: '100%',
     height: '100%',
-    backgroundColor: theme.colorScheme.background,
+    backgroundColor: theme?.colorScheme?.background ?? Colors.white,
     color: Colors.white,
     display: 'flex',
     flexDirection: 'column',
@@ -51,7 +51,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
   const Bar = styled('div', {
     width: '100%',
     height: '50px',
-    backgroundColor: theme.colorScheme.primary,
+    backgroundColor: theme?.colorScheme?.primary ?? Colors.white,
     color: Colors.blue,
     display: 'flex',
     flexDirection: 'row',

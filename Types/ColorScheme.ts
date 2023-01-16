@@ -1,9 +1,17 @@
 export type ColorScheme = {
-  primary: string;
-  primaryVariant: string;
-  secondary: string;
-  secondaryVariant: string;
-  background: string;
-  surface: string;
-  error: string;
+  /**
+   *
+   All of the properties are optional,
+   so that they can be overridden
+   by the user
+   *
+  */
+ 
+  primary?: string;
+  primaryVariant?: string;
+  secondary?: string;
+  secondaryVariant?: string;
+  background?: string;
+  surface?: string;
+  error?: string;
 };
