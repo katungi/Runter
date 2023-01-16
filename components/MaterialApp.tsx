@@ -64,7 +64,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
       <Bar>
         <Title>{title}</Title>
       </Bar>
-      {!!home ? { home } : <TextStyle>Hello World</TextStyle>}
+      {home ? { home } : <TextStyle>Hello World</TextStyle>}
     </Body>
   );
 }

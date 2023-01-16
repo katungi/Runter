@@ -1,5 +1,5 @@
 import React from 'react';
-import { Root, MaterialApp } from 'runter' // <-- This is the library
+import { Root, MaterialApp } from 'runter'; // <-- This is the library
 
 export default function App() {
   return (
@@ -11,11 +11,10 @@ export default function App() {
             primary: '#2196F3',
             background: '#fff',
           },
-          title: 'Runter Example'
+          title: 'Runter Example',
         }}
         title="Runter Example"
       />
     </Root>
   );
 }
-

@@ -1,4 +1,4 @@
-export type ColorScheme = {
+type ColorScheme = {
   /**
    *
    All of the properties are optional,
@@ -6,7 +6,7 @@ export type ColorScheme = {
    by the user
    *
   */
- 
+
   primary?: string;
   primaryVariant?: string;
   secondary?: string;
@@ -15,3 +15,4 @@ export type ColorScheme = {
   surface?: string;
   error?: string;
 };
+export default ColorScheme;
