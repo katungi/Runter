@@ -1,6 +1,8 @@
 # runter
 
-A concise way of making applications
+A concise way of making applications using a Flutter Like approach.
+
+The best of both worlds, React Native and Flutter.
 
 ## Installation
 
@@ -8,14 +10,26 @@ A concise way of making applications
 npm install runter
 ```
 
+ or
+
+```sh
+yarn add runter
+```
+
 ## Usage
 
+To get started, import the `Root` component from the `runter` package. This component is the root of your application and should be rendered at the top of your component tree.
+
 ```js
-import { multiply } from 'runter';
+// in App.js
+import { Root } from 'runter';
+
+<Root>
+  <App />
+</Root>
 
 // ...
 
-const result = await multiply(3, 7);
 ```
 
 ## Contributing
