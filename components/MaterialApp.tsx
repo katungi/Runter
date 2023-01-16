@@ -1,7 +1,7 @@
-import React from "react";
-import type { MaterialAppProps } from "Types/MaterialApp.types";
-import { styled } from '@stitches/react'
-import Colors from "Defaults/Colors";
+import React from 'react';
+import type { MaterialAppProps } from 'Types/MaterialApp.types';
+import { styled } from '@stitches/react';
+import Colors from 'Defaults/Colors';
 
 /**
  *
@@ -14,10 +14,9 @@ import Colors from "Defaults/Colors";
  */
 
 export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
-
-  const themeColor = theme.brightness
-  const primaryColor = !!theme.colorScheme.primary ?? Colors.blue
-  const titleStyle = !!theme.textTheme ? theme.textTheme : '#fff'
+  // const themeColor = theme.brightness
+  // const primaryColor = !!theme.colorScheme.primary ?? Colors.blue
+  // const titleStyle = !!theme.textTheme ? theme.textTheme : '#fff'
 
   const TextStyle = styled('p', {
     color: Colors.black,
@@ -29,14 +28,14 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
     textDecoration: 'underline',
     textDecorationColor: Colors.yellow,
     textDecorationThickness: '5px',
-  })
+  });
 
   const Title = styled('p', {
     color: Colors.white,
     fontSize: '20px',
     fontWeight: 'bold',
     margin: '0px',
-  })
+  });
 
   const Body = styled('div', {
     width: '100%',
@@ -47,7 +46,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-  })
+  });
 
   const Bar = styled('div', {
     width: '100%',
@@ -58,11 +57,13 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-  })
+  });
 
   return (
     <Body>
-      <Bar><Title>{title}</Title></Bar>
+      <Bar>
+        <Title>{title}</Title>
+      </Bar>
       {!!home ? { home } : <TextStyle>Hello World</TextStyle>}
     </Body>
   );

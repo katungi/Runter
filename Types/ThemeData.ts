@@ -1,5 +1,5 @@
-import type { ColorScheme } from "./ColorScheme";
-import type { TextTheme } from "./TextThemes";
+import type { ColorScheme } from './ColorScheme';
+import type { TextTheme } from './TextThemes';
 
 type BrightnessType = 'light' | 'dark';
 

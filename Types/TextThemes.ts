@@ -1,4 +1,4 @@
-import type { TextStyle } from "./TextStyles";
+import type { TextStyle } from './TextStyles';
 
 export type TextTheme = {
   headline1: TextStyle;
