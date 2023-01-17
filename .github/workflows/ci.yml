@@ -18,12 +18,12 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build
-        run: yarn install && yarn build
+        run: yarn install && yarn prepack
 
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: yarn build && yarn publish --access public
+          publish: yarn prepack && yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

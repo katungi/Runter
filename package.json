@@ -33,8 +33,7 @@
     "prepack": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "bootstrap": "yarn example && yarn install",
-    "build": "npx tsup index.ts --format cjs,esm --dts"
+    "bootstrap": "yarn example && yarn install"
   },
   "keywords": [
     "react-native",
