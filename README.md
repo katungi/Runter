@@ -1,7 +1,10 @@
 # runter
 
 A concise way of making applications using a Flutter Like approach.
-When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). This library is an attempt to bring the component library and the framework to React Native.
+<br>
+When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). 
+<br>
+This library is an attempt to bring the component library and the framework to React Native.
 
 ## Why?
 
@@ -23,7 +26,9 @@ yarn add runter
 
 ## Usage
 
-To get started, import the `Root` component from the `runter` package. This component is the root of your application and should be rendered at the top of your component tree. It is the equivalent of `runApp` in [Flutter](https://api.flutter.dev/flutter/widgets/runApp.html).
+To get started, import the `Root` component from the `runter` package.
+<br>
+This component is the root of your application and should be rendered at the top of your component tree. It is the equivalent of `runApp` in [Flutter](https://api.flutter.dev/flutter/widgets/runApp.html).
 
 Root takes a component child `MaterialApp` which is the main component of the library. It is the equivalent of `MaterialApp` in [Flutter](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
@@ -89,7 +94,10 @@ I will also be working on the documentation and the examples.
 
 ## Contributing
 
-This idea is insane and still in its infancy and is no where ready for production. If you would like to contribute, please do so.
+This idea is insane and still in its infancy and is no where ready for production. 
+<br>
+If you would like to contribute, please do so.
+<br>
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
