@@ -39,7 +39,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build and Publish
-        run: yarn install --frozen-lockfile && yarn release
+        run: yarn install && yarn release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
