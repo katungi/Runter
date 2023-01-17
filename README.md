@@ -1,6 +1,7 @@
 # runter
 
 A concise way of making applications using a Flutter Like approach.
+<br>
 When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). This library is an attempt to bring the component library and the framework to React Native.
 
 ## Why?
@@ -90,6 +91,7 @@ I will also be working on the documentation and the examples.
 ## Contributing
 
 This idea is insane and still in its infancy and is no where ready for production. If you would like to contribute, please do so.
+<br>
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
