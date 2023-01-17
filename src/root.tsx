@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from '@stitches/react';
+import { NativeBaseProvider } from 'native-base';
 
 /**
  *
@@ -13,7 +14,7 @@ import { styled } from '@stitches/react';
   *
   * @returns {React.ReactElement} - The root component
   *
-  * 
+  *
  */
 
 export default function Root({ children }: { children: React.ReactNode }) {
@@ -27,5 +28,9 @@ export default function Root({ children }: { children: React.ReactNode }) {
     alignItems: 'center',
     justifyContent: 'center',
   });
-  return <RootWidget>{children}</RootWidget>;
+  return (
+    <NativeBaseProvider>
+      <RootWidget>{children}</RootWidget>
+    </NativeBaseProvider>
+  );
 }
