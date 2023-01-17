@@ -90,7 +90,9 @@ I will also be working on the documentation and the examples.
 
 ## Contributing
 
-This idea is insane and still in its infancy and is no where ready for production. If you would like to contribute, please do so.
+This idea is insane and still in its infancy and is no where ready for production. 
+<br>
+If you would like to contribute, please do so.
 <br>
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
