@@ -34,7 +34,7 @@
     "release": "release-it",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn install",
-    "build": "yarn tsup index.ts --format cjs,esm --dts"
+    "build": "npx tsup index.ts --format cjs,esm --dts"
   },
   "keywords": [
     "react-native",
