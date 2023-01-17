@@ -2,7 +2,9 @@
 
 A concise way of making applications using a Flutter Like approach.
 <br>
-When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). This library is an attempt to bring the component library and the framework to React Native.
+When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). 
+<br>
+This library is an attempt to bring the component library and the framework to React Native.
 
 ## Why?
 
