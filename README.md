@@ -24,7 +24,9 @@ yarn add runter
 
 ## Usage
 
-To get started, import the `Root` component from the `runter` package. This component is the root of your application and should be rendered at the top of your component tree. It is the equivalent of `runApp` in [Flutter](https://api.flutter.dev/flutter/widgets/runApp.html).
+To get started, import the `Root` component from the `runter` package.
+<br>
+This component is the root of your application and should be rendered at the top of your component tree. It is the equivalent of `runApp` in [Flutter](https://api.flutter.dev/flutter/widgets/runApp.html).
 
 Root takes a component child `MaterialApp` which is the main component of the library. It is the equivalent of `MaterialApp` in [Flutter](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
