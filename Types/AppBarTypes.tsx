@@ -12,7 +12,6 @@ import type React from 'react';
 
 export type AppBarProps = {
   title: string;
-  // what is the difference betweeen ReactNode and ReactElement?
   leading: React.ReactNode;
   actions: [React.ReactNode];
 };

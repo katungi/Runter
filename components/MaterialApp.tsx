@@ -12,6 +12,8 @@ import { DefaultColorScheme } from 'Defaults/ColorScheme';
  * @param {ThemeData} theme - The theme provider of the application
  * @param {string} title - The title of the application
  *
+ * @returns {React.ReactElement} - The material app component
+ * 
  */
 
 export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
