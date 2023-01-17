@@ -6,29 +6,8 @@ on:
   pull_request:
     branches:
       - main
-
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
-  # lint:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-
-  #     - name: Setup
-  #       uses: ./.github/actions/setup
-
-  # test:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-
-  #     - name: Setup
-  #       uses: ./.github/actions/setup
-
-  #     - name: Run unit tests
-  #       run: yarn test --maxWorkers=2 --coverage
-
   build:
     runs-on: ubuntu-latest
     steps:
@@ -38,9 +17,13 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Build and Publish
-        run: yarn install && yarn release
+      - name: Build
+        run: yarn install && yarn build
+
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: yarn build && yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-
