@@ -20,7 +20,7 @@ import type { BottomNavigationProps } from 'Types/BottomNavigationProps';
 
 export default function BottomNavigationBar({
   navItems,
-}: BottomNavigationProps) {
+}: BottomNavigationProps): React.ReactElement {
   const [selected, setSelected] = React.useState(1);
   return (
     <Box
