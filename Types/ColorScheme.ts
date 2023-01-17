@@ -10,9 +10,10 @@ type ColorScheme = {
   primary?: string;
   primaryVariant?: string;
   secondary?: string;
-  secondaryVariant?: string;
+  tertiary?: string;
   background?: string;
   surface?: string;
   error?: string;
+  accent?: string;
 };
 export default ColorScheme;

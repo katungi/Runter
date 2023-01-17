@@ -2,6 +2,7 @@ import React from 'react';
 import type { MaterialAppProps } from 'Types/MaterialApp.types';
 import { styled } from '@stitches/react';
 import Colors from 'Defaults/Colors';
+import { DefaultColorScheme } from 'Defaults/ColorScheme';
 
 /**
  *
@@ -17,6 +18,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
   // const themeColor = theme.brightness
   // const primaryColor = !!theme.colorScheme.primary ?? Colors.blue
   // const titleStyle = !!theme.textTheme ? theme.textTheme : '#fff'
+  const scheme = theme?.colorScheme ?? DefaultColorScheme;
 
   const TextStyle = styled('p', {
     color: Colors.black,
@@ -40,7 +42,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
   const Body = styled('div', {
     width: '100%',
     height: '100%',
-    backgroundColor: theme?.colorScheme?.background ?? Colors.white,
+    backgroundColor: scheme?.background,
     color: Colors.white,
     display: 'flex',
     flexDirection: 'column',
@@ -51,7 +53,7 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
   const Bar = styled('div', {
     width: '100%',
     height: '50px',
-    backgroundColor: theme?.colorScheme?.primary ?? Colors.white,
+    backgroundColor: scheme.background,
     color: Colors.blue,
     display: 'flex',
     flexDirection: 'row',
