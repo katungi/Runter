@@ -1,8 +1,8 @@
 import React from 'react';
-import type { MaterialAppProps } from 'Types/MaterialApp.types';
+import type { MaterialAppProps } from './../Types/MaterialApp.types';
 import { styled } from '@stitches/react';
-import Colors from 'Defaults/Colors';
-import { DefaultColorScheme } from 'Defaults/ColorScheme';
+import Colors from './../Defaults/Colors';
+import { DefaultColorScheme } from './../Defaults/ColorScheme';
 
 /**
  *
