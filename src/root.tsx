@@ -1,5 +1,4 @@
 import React from 'react';
-import { styled } from '@stitches/react';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { StyleSheet, View } from 'react-native';
 

@@ -6,8 +6,8 @@ export type ScaffoldProps = {
   backgroundColor?: string | '#fff';
   // Scaffold takes a few components as props
   // TODO: Build these components with reasonable defaults
-  AppBar?: React.ReactElement;
-  BottomNavigationBar?: React.ReactElement;
+  appBar?: React.ReactElement;
+  bottomNavigationBar?: React.ReactElement;
   // BottomSheet?: React.ReactElement;
-  FloatingActionButton?: boolean
+  floatingActionButton?: boolean
 };
