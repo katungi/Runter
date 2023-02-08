@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Root>
       <MaterialApp
-        home={<Text>Hello</Text>}
+        home={<Text>New Project</Text>}
         theme={{
           colorScheme: {
             primary: '#2196F3',

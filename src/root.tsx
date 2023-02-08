@@ -23,7 +23,7 @@ export default function Root({ children }: { children: React.ReactNode }): React
 
     // this does not work, but it should work in the future when we have a theme provider
     <PaperProvider>
-      <View style={styles.root}>{children}</View>
+      <View>{children}</View>
     </PaperProvider>
   );
 }
