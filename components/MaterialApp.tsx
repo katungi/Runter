@@ -16,7 +16,11 @@ import { DefaultColorScheme } from './../Defaults/ColorScheme';
  *
  */
 
-export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
+export default function MaterialApp({
+  home,
+  theme,
+  title,
+}: MaterialAppProps): React.ReactElement {
   // const themeColor = theme.brightness
   // const primaryColor = !!theme.colorScheme.primary ?? Colors.blue
   // const titleStyle = !!theme.textTheme ? theme.textTheme : '#fff'
@@ -52,23 +56,21 @@ export default function MaterialApp({ home, theme, title }: MaterialAppProps) {
     justifyContent: 'center',
   });
 
-  const Bar = styled('div', {
-    width: '100%',
-    height: '50px',
-    backgroundColor: scheme.background,
-    color: Colors.blue,
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  });
+  // const Bar = styled('div', {
+  //   width: '100%',
+  //   height: '50px',
+  //   backgroundColor: scheme.background,
+  //   color: Colors.blue,
+  //   display: 'flex',
+  //   flexDirection: 'row',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // });
 
   return (
     <Body>
-      <Bar>
-        <Title>{title}</Title>
-      </Bar>
-      {home ? { home } : <TextStyle>Hello World</TextStyle>}
+      {title && <Title>{title}</Title>}
+      {home ? home : <TextStyle>Hello World</TextStyle>}
     </Body>
   );
 }

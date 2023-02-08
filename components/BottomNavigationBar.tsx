@@ -1,6 +1,7 @@
-import { Box, Center, HStack, Icon, Pressable, Text } from 'native-base';
-import React from 'react';
+import React, { useEffect } from 'react';
 import type { BottomNavigationProps } from 'Types/BottomNavigationProps';
+import { BottomNavigation } from 'react-native-paper';
+import { Text, View } from 'react-native';
 
 /**
  *
@@ -18,37 +19,51 @@ import type { BottomNavigationProps } from 'Types/BottomNavigationProps';
  *
  */
 
+// const BOTTOM_APPBAR_HEIGHT = 80;
+// const MEDIUM_FAB_HEIGHT = 56;
+
 export default function BottomNavigationBar({
-  navItems,
+  labelled,
+  routes,
 }: BottomNavigationProps): React.ReactElement {
-  const [selected, setSelected] = React.useState(1);
+  const [selected, setSelected] = React.useState(0);
+  const [navRoutes, setNavRoutes] = React.useState([
+    {
+      key: 'music',
+      title: 'Favorites',
+      focusedIcon: 'heart',
+      unfocusedIcon: 'heart-outline',
+    },
+    { key: 'albums', title: 'Albums', focusedIcon: 'album' },
+    { key: 'recents', title: 'Recents', focusedIcon: 'history' },
+    {
+      key: 'notifications',
+      title: 'Notifications',
+      focusedIcon: 'bell',
+      unfocusedIcon: 'bell-outline',
+    },
+  ]);
+
+  useEffect(() => {
+    if (routes !== null) {
+      setNavRoutes(routes);
+    }
+  }, [routes]);
+
   return (
-    <Box
-      flex={1}
-      bg="white"
-      safeAreaTop
-      width="100%"
-      maxW="300px"
-      alignSelf="center"
-    >
-      <HStack bg="indigo.600" alignItems="center" safeAreaBottom shadow={6}>
-        {navItems.map((item: any, index: any) => (
-          <Pressable
-            key={index}
-            opacity={selected === 0 ? 1 : 0.5}
-            py="3"
-            flex={1}
-            onPress={() => setSelected(0)}
-          >
-            <Center>
-              <Icon mb="1" as={item.icon} color="white" size="sm" />
-              <Text color="white" fontSize="12">
-                {item.label}
-              </Text>
-            </Center>
-          </Pressable>
-        ))}
-      </HStack>
-    </Box>
+    <BottomNavigation
+      labeled={labelled}
+      onIndexChange={setSelected}
+      navigationState={{ index: selected, routes: navRoutes }}
+      renderScene={({ route }) => {
+        const index = navRoutes.findIndex((item) => item.key === route.key);
+        const routeInfo = routes[index];
+        return (
+          <View>
+            <Text>{routeInfo?.title}</Text>
+          </View>
+        );
+      }}
+    />
   );
 }
