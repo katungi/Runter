@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled } from '@stitches/react';
-import { NativeBaseProvider } from 'native-base';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { StyleSheet, View } from 'react-native';
 
 /**
  *
@@ -17,8 +18,18 @@ import { NativeBaseProvider } from 'native-base';
   *
  */
 
-export default function Root({ children }: { children: React.ReactNode }) {
-  const RootWidget = styled('div', {
+export default function Root({ children }: { children: React.ReactNode }): React.ReactElement {
+  return (
+
+    // this does not work, but it should work in the future when we have a theme provider
+    <PaperProvider>
+      <View style={styles.root}>{children}</View>
+    </PaperProvider>
+  );
+}
+
+const styles = StyleSheet.create({
+  root: {
     width: '100%',
     height: '100%',
     backgroundColor: 'white',
@@ -27,10 +38,7 @@ export default function Root({ children }: { children: React.ReactNode }) {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-  });
-  return (
-    <NativeBaseProvider>
-      <RootWidget>{children}</RootWidget>
-    </NativeBaseProvider>
-  );
-}
+  }
+})
+
+

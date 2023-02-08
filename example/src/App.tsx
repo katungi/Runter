@@ -1,11 +1,13 @@
 import React from 'react';
+import { Text } from 'react-native';
+
 import { Root, MaterialApp } from 'runter'; // <-- This is the library
 
 export default function App() {
   return (
     <Root>
       <MaterialApp
-        home={<div>Home</div>}
+        home={<Text>Hello</Text>}
         theme={{
           colorScheme: {
             primary: '#2196F3',

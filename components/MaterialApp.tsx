@@ -3,6 +3,7 @@ import type { MaterialAppProps } from './../Types/MaterialApp.types';
 import { styled } from '@stitches/react';
 import Colors from './../Defaults/Colors';
 import { DefaultColorScheme } from './../Defaults/ColorScheme';
+import { StyleSheet, Text, View } from 'react-native';
 
 /**
  *
@@ -21,56 +22,41 @@ export default function MaterialApp({
   theme,
   title,
 }: MaterialAppProps): React.ReactElement {
-  // const themeColor = theme.brightness
-  // const primaryColor = !!theme.colorScheme.primary ?? Colors.blue
-  // const titleStyle = !!theme.textTheme ? theme.textTheme : '#fff'
   const scheme = theme?.colorScheme ?? DefaultColorScheme;
 
-  const TextStyle = styled('p', {
-    color: Colors.black,
-    fontSize: '20px',
-    fontWeight: 'bold',
-    margin: '0px',
-    textUnderlinePosition: 'under',
-    textUnderlineOffset: '2px',
-    textDecoration: 'underline',
-    textDecorationColor: Colors.yellow,
-    textDecorationThickness: '5px',
-  });
+  return (
+    <View style={{ ...styles.body, backgroundColor: scheme?.background }}>
+      {title && <Text style={styles.defaultTitle}>{title}</Text>}
+      {home ? home : <Text style={styles.textStyles}>Hello World</Text>}
+    </View>
+  );
+}
 
-  const Title = styled('p', {
-    color: Colors.white,
-    fontSize: '20px',
-    fontWeight: 'bold',
-    margin: '0px',
-  });
-
-  const Body = styled('div', {
+const styles = StyleSheet.create({
+  body: {
     width: '100%',
     height: '100%',
-    backgroundColor: scheme?.background,
     color: Colors.white,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-  });
-
-  // const Bar = styled('div', {
-  //   width: '100%',
-  //   height: '50px',
-  //   backgroundColor: scheme.background,
-  //   color: Colors.blue,
-  //   display: 'flex',
-  //   flexDirection: 'row',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // });
-
-  return (
-    <Body>
-      {title && <Title>{title}</Title>}
-      {home ? home : <TextStyle>Hello World</TextStyle>}
-    </Body>
-  );
-}
+  },
+  defaultTitle: {
+    color: Colors.white,
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: '0px',
+  },
+  textStyles: {
+    color: Colors.black,
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: 0,
+    textUnderlinePosition: 'under',
+    textUnderlineOffset: 2,
+    textDecoration: 'underline',
+    textDecorationColor: Colors.yellow,
+    textDecorationThickness: 5,
+  },
+});
