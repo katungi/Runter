@@ -8,6 +8,6 @@ export type ScaffoldProps = {
   // TODO: Build these components with reasonable defaults
   AppBar?: React.ReactElement;
   BottomNavigationBar?: React.ReactElement;
-  BottomSheet?: React.ReactElement;
-  FloatingActionButton?: React.ReactElement;
+  // BottomSheet?: React.ReactElement;
+  FloatingActionButton?: boolean
 };
