@@ -72,18 +72,7 @@ export default function App() {
 
 I am working to bring all the components from Flutter to React Native. Starting with the basic ones. Here is a list of the components that are in the frontline of development.
 
- <input type="checkbox" disabled checked /> Scaffold - In Testing 🧪 <br/>
- <input type="checkbox" disabled checked /> AppBar - In Testing 🧪 <br/>
- <input type="checkbox" disabled checked /> FloatingActionButton - In Testing 🧪 <br/>
-<input type="checkbox" disabled /> Container <br/>
-<input type="checkbox" disabled /> Row <br/>
-<input type="checkbox" disabled /> Column <br/>
-<input type="checkbox" disabled /> Center <br/>
-<input type="checkbox" disabled /> Stack <br/>
-<input type="checkbox" disabled /> Positioned <br/>
-<input type="checkbox" disabled /> Image <br/>
-<input type="checkbox" disabled /> Icon <br/>
-<input type="checkbox" disabled /> IconButton <br/>
+<input type="checkbox" disabled checked /> Scaffold - In Testing 🧪 <br/> <input type="checkbox" disabled checked /> AppBar - In Testing 🧪 <br/> <input type="checkbox" disabled checked /> FloatingActionButton - In Testing 🧪 <br/> <input type="checkbox" disabled /> Container <br/> <input type="checkbox" disabled /> Row <br/> <input type="checkbox" disabled /> Column <br/> <input type="checkbox" disabled /> Center <br/> <input type="checkbox" disabled /> Stack <br/> <input type="checkbox" disabled /> Positioned <br/> <input type="checkbox" disabled /> Image <br/> <input type="checkbox" disabled /> Icon <br/> <input type="checkbox" disabled /> IconButton <br/>
 
 ## Roadmap
 
