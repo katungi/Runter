@@ -1,8 +1,10 @@
 # runter
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
 A concise way of making applications using a Flutter Like approach.
 <br>
-When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia). 
+When you think about it, Flutter comes with a component library, a default language (dart) and an Engine (Skia).
 <br>
 This library is an attempt to bring the component library and the framework to React Native.
 
@@ -70,19 +72,18 @@ export default function App() {
 
 I am working to bring all the components from Flutter to React Native. Starting with the basic ones. Here is a list of the components that are in the frontline of development.
 
-- [] Scaffold
-- [] AppBar
-- [] Text
-- [] Container
-- [] Row
-- [] Column
-- [] Center
-- [] Stack
-- [] Positioned
-- [] Image
-- [] Icon
-- [] IconButton
-- [] FloatingActionButton
+ <input type="checkbox" disabled checked /> Scaffold - In Testing 🧪 <br/>
+ <input type="checkbox" disabled checked /> AppBar - In Testing 🧪 <br/>
+ <input type="checkbox" disabled checked /> FloatingActionButton - In Testing 🧪 <br/>
+<input type="checkbox" disabled /> Container <br/>
+<input type="checkbox" disabled /> Row <br/>
+<input type="checkbox" disabled /> Column <br/>
+<input type="checkbox" disabled /> Center <br/>
+<input type="checkbox" disabled /> Stack <br/>
+<input type="checkbox" disabled /> Positioned <br/>
+<input type="checkbox" disabled /> Image <br/>
+<input type="checkbox" disabled /> Icon <br/>
+<input type="checkbox" disabled /> IconButton <br/>
 
 ## Roadmap
 
@@ -94,7 +95,7 @@ I will also be working on the documentation and the examples.
 
 ## Contributing
 
-This idea is insane and still in its infancy and is no where ready for production. 
+This idea is insane and still in its infancy and is no where ready for production.
 <br>
 If you would like to contribute, please do so.
 <br>
