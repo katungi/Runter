@@ -10,7 +10,7 @@ This library is an attempt to bring the component library and the framework to R
 
 ## Why?
 
-Still tring to figure that out. But I think it's because I love Flutter and I love React Native and I would want the best of both worlds.
+Still trying to figure that out. But I think it's because I love Flutter and I love React Native and I would want the best of both worlds.
 
 ⚠️ Experimental WIP ⚠️
 
